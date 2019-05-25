@@ -16,6 +16,7 @@ function Article({ article: { title, content, postDate, author, imgUrl } }) {
             <span className="author">Posted by {author}</span>
           </div>
           <img className="coverImage" src={imgUrl} />
+          {/* TODO: should use dangerInsertHtml to render markup content from wp headless */}
           <p className="content">{content}</p>
         </article>
         <RecentPosts />
